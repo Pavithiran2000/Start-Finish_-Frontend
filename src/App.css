@@ -1,7 +1,6 @@
 .App {
   text-align: center;
 }
-
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -35,4 +34,31 @@
   to {
     transform: rotate(360deg);
   }
+}
+.error{
+  display: flex;
+  align-items: center;
+}
+.error .errorIcon{
+padding-right: 5px;
+height: 18px;
+}
+.link pre{
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.nav-link {
+  color: black;
+  margin-right: 2px;
+  background-color: #FBFBF9;
+  padding: 0.6em;
+  border-radius: 0;
+}
+
+.nav-link:hover {
+  background-color: #FBFBF9;
+}
+
+.active-nav-link {
+  borderBottom: '2px solid red';
 }
