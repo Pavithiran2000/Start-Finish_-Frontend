@@ -50,6 +50,10 @@ const navItems = ['Today', 'All tasks', 'Profile'];
       navigate("/profile");
     }, [navigate]);
 
+    const onHelp = useCallback(() => {
+      navigate("/help");
+    }, [navigate]);
+
   const handleClick = () => {
     setOpen(true);
   };
@@ -150,6 +154,10 @@ const navItems = ['Today', 'All tasks', 'Profile'];
                   {item}
                 </Button>
             ))}
+            <Button size='md' sx={{ ml: 5.4, backgroundColor: '#FBFBF9', color: 'darkorange','&:hover':{
+              backgroundColor: '#FBFBF9', color: 'black'}}}
+              onClick={onHelp}
+            >Ask Help</Button>
             <Button size='md' sx={{ ml: 5.4, backgroundColor: 'darkorange','&:hover':{
               backgroundColor: 'black'}}}
               onClick={handleSignOut}
